@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Arrow cursor for non-clickable text inside the About section */
+#about h1,
+#about h2,
+#about h3,
+#about h4,
+#about h5,
+#about h6,
+#about p,
+#about span,
+#about div  {
+  cursor: default !important;
+}
+
+
+
+/* In your global CSS file AFTER Tailwind imports */
+#contact h1,
+#contact h2,
+#contact h3,
+#contact h4,
+#contact h5,
+#contact h6,
+#contact p,
+#contact span,
+#contact label {
+  cursor: default;
+}
+/* Arrow cursor on text in Skills section */
+#skills p,
+#skills h1,
+#skills h2,
+#skills h3,
+#skills h4,
+#skills h5,
+#skills h6,
+#skills span {
+  cursor: default;
+}
+/* Arrow cursor for non-clickable text inside the Projects section */
+#projects h2,
+#projects h3,
+#projects p,
+#projects span {
+  cursor: default;
+}
+/* Arrow cursor for non-clickable text inside the Hero section */
+#home h1,
+#home h2,
+#home h3,
+#home h4,
+#home h5,
+#home h6,
+#home p,
+#home span {
+  cursor: default;
+}
+/* Arrow cursor for non-clickable text inside the Navigation section */
+#navigation h1,
+#navigation h2,
+#navigation h3,
+#navigation h4,
+#navigation h5,
+#navigation h6,
+#navigation p,
+#navigation span {
+  cursor: default;
+}
+/* Arrow cursor for non-clickable text inside the Footer section */
+#footer h1,
+#footer h2,
+#footer h3,
+#footer h4,
+#footer h5,
+#footer h6,
+#footer p,
+#footer span,
+#footer li {
+  cursor: default;
+}
