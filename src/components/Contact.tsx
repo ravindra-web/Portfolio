@@ -22,7 +22,7 @@ const Contact = () => {
 
     try {
       setLoading(true);
-      const response = await axios.post('https://portfolio-backend-etrn.onrender.com', formData); // 👈 Use your server URL
+      const response = await axios.post('https://portfolio-backend-etrn.onrender.com/api/contact', formData); // 👈 Use your server URL
 
       if (response.data.success) {
         alert('Message sent successfully!');
