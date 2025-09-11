@@ -39,7 +39,7 @@ const AdminDashboard = () => {
 
   const loadContacts = async () => {
     try {
-      const response = await fetch('https://portfolio-backend-etrn.onrender.com/api/contact');
+      const response = await fetch('https://portfolio-backend-8lzg.onrender.com/api/contact');
       const data = await response.json();
       setContacts(data);
     } catch (error) {
@@ -49,7 +49,7 @@ const AdminDashboard = () => {
 
   const updateContactStatus = async (id: string, status: 'new' | 'read' | 'replied') => {
     try {
-      await fetch(`https://portfolio-backend-etrn.onrender.com/api/contact/${id}`, {
+      await fetch(`https://portfolio-backend-8lzg.onrender.com/api/contact/${id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ status }),
@@ -65,7 +65,7 @@ const AdminDashboard = () => {
 
   const handleDeleteContact = async (id: string) => {
     try {
-      await fetch(`https://portfolio-backend-etrn.onrender.com/api/contact/${id}`, {
+      await fetch(`https://portfolio-backend-8lzg.onrender.com/api/contact/${id}`, {
         method: 'DELETE',
       });
       loadContacts();
